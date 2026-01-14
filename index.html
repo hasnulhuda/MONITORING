@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>ESP32 MQTT Dashboard</title>
+
+    <!-- MQTT.js -->
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ESP32 Monitoring Dashboard</h1>
+    <span id="status" class="status offline">Offline</span>
+</header>
+
+<main class="grid">
+
+    <div class="card">
+        <h3>🌡 Temperature</h3>
+        <div id="temperature">--</div>
+        <small>°C</small>
+    </div>
+
+    <div class="card">
+        <h3>💧 Humidity</h3>
+        <div id="humidity">--</div>
+        <small>%</small>
+    </div>
+
+    <div class="card">
+        <h3>🌱 Humidity Soil </h3>
+        <div id="soilAnalog">--</div>
+        <small>%</small>
+    </div>
+
+    <div class="card">
+        <h3>🌾 Status Tanah</h3>
+        <div id="soilDigital">--</div>
+        <small>Status</small>
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
